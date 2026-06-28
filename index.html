@@ -1,1 +1,724 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- ========================================== -->
+<!-- 🚀 ADVANCED SEO & META TAGS                -->
+<!-- ========================================== -->
+<title>FFUPC | Free Fire Upcoming Patch Counters</title>
+<meta name="description" content="FFUPC is your ultimate Free Fire Upcoming Patch Counter. Calculate, predict, and track the exact release dates and regional deployment times for all upcoming Free Fire OB updates.">
+<meta name="keywords" content="FFUPC, Free Fire, Patch Tracker, Free Fire OB Update, OB54, OB55, Free Fire Patch Counter, Advance Server, Free Fire Update Time, Garena Free Fire">
+<meta name="author" content="TizonGaming">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://ffupc.vercel.app/">
+
+<!-- Open Graph / Facebook / WhatsApp -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ffupc.vercel.app/">
+<meta property="og:title" content="FFUPC | Free Fire Upcoming Patch Counters">
+<meta property="og:description" content="Calculate and track future Free Fire OB version deployment dates and regional times. Know exactly when the next update drops!">
+<meta property="og:image" content="https://ffupc.vercel.app/favicon.png">
+<meta property="og:site_name" content="FFUPC">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://ffupc.vercel.app/">
+<meta property="twitter:title" content="FFUPC | Free Fire Upcoming Patch Counters">
+<meta property="twitter:description" content="Calculate and track future Free Fire OB version deployment dates and regional times. Know exactly when the next update drops!">
+<meta property="twitter:image" content="https://ffupc.vercel.app/favicon.png">
+
+<!-- PWA & Favicon Icons (Strictly using /favicon.png) -->
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
+<meta name="theme-color" content="#17181a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="FFUPC">
+
+<!-- Inline PWA Manifest -->
+<link rel="manifest" href='data:application/manifest+json;charset=utf-8,%7B%22name%22%3A%22FFUPC%20%7C%20Free%20Fire%20Upcoming%20Patch%20Counters%22%2C%22short_name%22%3A%22FFUPC%22%2C%22description%22%3A%22Calculate%20and%20track%20future%20Free%20Fire%20OB%20version%20deployment%20dates%20and%20regional%20times.%22%2C%22start_url%22%3A%22%2F%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%2317181a%22%2C%22theme_color%22%3A%22%2317181a%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22%2Ffavicon.png%22%2C%22sizes%22%3A%22192x192%22%2C%22type%22%3A%22image%2Fpng%22%7D%2C%7B%22src%22%3A%22%2Ffavicon.png%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image%2Fpng%22%7D%5D%7D'>
+
+<!-- Google Rich Results / Schema Markup -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "FFUPC | Free Fire Upcoming Patch Counters",
+  "url": "https://ffupc.vercel.app/",
+  "description": "The ultimate predictor and countdown tracker for all upcoming Free Fire OB updates across all global regions.",
+  "applicationCategory": "GameApplication",
+  "operatingSystem": "Web, Android, iOS",
+  "creator": {
+    "@type": "Organization",
+    "name": "TizonGaming",
+    "url": "https://ffupc.vercel.app/"
+  },
+  "image": "https://ffupc.vercel.app/favicon.png",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<!-- ========================================== -->
+
+<!-- Extra bold weights for text -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
+
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+
+<style>
+:root {
+    --bg-primary: #17181a;
+    --bg-secondary: #202225;
+    --bg-tertiary: #2c2f33;
+    --bg-code: #101214;
+    --bg-hover: #35383c;
+    --text-primary: #f0f2f5;
+    --text-secondary: #a8b3cf;
+    --text-active: #82aaff;
+    --border-color: #3a3d42;
+    --error-color: #ff8a80;
+    --sidebar-width: 260px;
+    --font-family: 'Inter', sans-serif;
+    --font-family-code: 'Roboto Mono', monospace;
+}
+
+/* --- Base & Reset --- */
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+html, body { height: 100%; overflow: hidden; background-color: var(--bg-primary); color: var(--text-primary); font-family: var(--font-family); font-size: 16px; }
+button, a { background: none; border: none; cursor: pointer; color: inherit; text-decoration: none; font-family: inherit; }
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; font-size: 20px; color: var(--text-secondary); transition: color 0.2s; user-select: none; }
+
+/* --- Accessibility --- */
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+*:focus-visible { outline: 2px solid var(--text-active); outline-offset: 2px; border-radius: 4px; }
+
+/* --- Main Layout --- */
+.app-container { display: flex; width: 100%; height: 100%; }
+.main-wrapper { width: 100%; height: 100%; display: flex; flex-direction: column; }
+
+/* Header centered horizontally */
+.main-header { display: flex; align-items: center; justify-content: center; position: relative; padding: 12px 24px; background-color: rgba(23, 24, 26, 0.7); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border-color); flex-shrink: 0; position: sticky; top: 0; z-index: 100; }
+.header-title { font-size: 1.15rem; font-weight: 800; letter-spacing: 0.5px; }
+.icon-button { padding: 8px; border-radius: 50%; display: flex; transition: background-color 0.2s; }
+.icon-button:hover { background-color: var(--bg-hover); }
+.content-area { flex-grow: 1; overflow: auto; position: relative; }
+
+/* --- Sidebar --- */
+#left-sidebar { position: fixed; top: 0; left: 0; height: 100%; width: var(--sidebar-width); max-width: 85%; background-color: var(--bg-secondary); border-right: 1px solid var(--border-color); display: flex; flex-direction: column; z-index: 1001; transform: translateX(-100%); transition: transform 0.3s ease-in-out; }
+body.left-sidebar-open #left-sidebar { transform: translateX(0); }
+.sidebar-content { padding: 16px; display: flex; flex-direction: column; flex-grow: 1; overflow-y: auto; }
+.sidebar-header { font-size: 1.5rem; font-weight: 900; padding: 12px; margin-bottom: 24px; color: var(--text-active); text-transform: uppercase; letter-spacing: 1px; }
+.sidebar-nav a, .sidebar-nav button { font-size: 1em; display: flex; align-items: center; gap: 16px; padding: 12px; border-radius: 8px; font-weight: 600; transition: background-color 0.2s, color 0.2s, opacity 0.2s; color: var(--text-secondary); text-align: left; width: 100%; margin-bottom: 4px; }
+.sidebar-nav a:hover, .sidebar-nav button:hover { background-color: var(--bg-hover); color: var(--text-primary); }
+.sidebar-nav a.active { background-color: var(--bg-tertiary); color: var(--text-primary); }
+.sidebar-nav .material-symbols-outlined { color: var(--text-secondary); }
+.sidebar-nav a:hover .material-symbols-outlined, .sidebar-nav a.active .material-symbols-outlined, .sidebar-nav button:hover .material-symbols-outlined { color: var(--text-primary); }
+.sidebar-footer { margin-top: auto; padding-top: 16px; border-top: 1px solid var(--border-color); }
+
+/* --- Screen Layout & Cards --- */
+.screen { display: none; width: 100%; min-height: 100%; padding: 16px 24px 60px; }
+.screen.active { display: block; animation: fadeIn 0.3s ease-in-out; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+.content-wrapper { max-width: 900px; width: 100%; margin: 0 auto; padding: 16px 0; }
+
+.page-header { text-align: center; margin-bottom: 40px; padding: 0 16px; }
+.page-header h1 { font-size: 2.6rem; margin-bottom: 8px; font-weight: 900; letter-spacing: -0.5px; }
+.page-header p { font-size: 1.1rem; font-weight: 600; color: var(--text-secondary); }
+
+/* Current OB Badge */
+.current-ob-badge { display: inline-flex; align-items: center; justify-content: center; gap: 6px; background-color: rgba(0, 200, 83, 0.12); color: #00c853; padding: 8px 16px; border-radius: 30px; border: 1px solid rgba(0, 200, 83, 0.3); font-size: 0.85rem; font-weight: 800; margin-top: 16px; text-transform: uppercase; letter-spacing: 0.5px; }
+.current-ob-badge strong { font-family: var(--font-family-code); font-size: 1rem; color: #fff; }
+
+.profile-card { background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 24px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.15); }
+
+/* History Items */
+.history-item { display: flex; align-items: center; justify-content: space-between; background-color: var(--bg-tertiary); border-radius: 8px; padding: 16px; border: 1px solid var(--border-color); margin-bottom: 12px; transition: background-color 0.2s, border-color 0.2s; }
+body:not(.touch-device) .history-item:hover { background-color: var(--bg-hover); border-color: #4f5257; }
+.history-item-ob { font-size: 1.1rem; font-weight: 800; color: var(--text-primary); }
+.history-item-date { font-size: 0.95rem; font-weight: 600; font-family: var(--font-family-code); color: var(--text-secondary); }
+
+/* Highlighted Current Version in History */
+.history-item.current-live { border-color: var(--text-active); background-color: rgba(130, 170, 255, 0.05); }
+.history-item.current-live .history-item-ob::after { content: ' (Live Now)'; color: #00c853; font-size: 0.75em; text-transform: uppercase; letter-spacing: 1px; margin-left: 8px; vertical-align: middle; }
+
+/* Buttons & Inputs */
+.btn { padding: 10px 20px; font-weight: 700; border-radius: 8px; transition: background-color 0.2s, color 0.2s, opacity 0.2s; cursor: pointer; }
+.btn-primary { background-color: var(--text-active); color: var(--bg-primary); border: none; }
+.btn-primary:hover:not(:disabled) { opacity: 0.9; transform: translateY(-1px); }
+.btn-primary:active { transform: translateY(1px); }
+
+/* --- TRACKER SPECIFIC COMPONENTS --- */
+.patch-input { font-size: clamp(3rem, 10vw, 4.5rem); background: transparent; border: none; border-bottom: 2px dashed var(--border-color); color: var(--text-active); outline: none; text-align: center; font-weight: 800; width: 140px; font-family: var(--font-family-code); padding-bottom: 8px; transition: border-color 0.3s; }
+.patch-input:focus { border-bottom-color: var(--text-active); }
+
+.profile-card.error-state { border-color: var(--error-color); }
+.text-center { text-align: center; }
+
+/* Kelly Loader */
+.kelly-container { width: 120px; height: 120px; margin: 0 auto; position: relative; }
+.kelly-frame { position: absolute; inset: 0; opacity: 0; background-size: contain; background-repeat: no-repeat; background-position: center; }
+.kelly-frame.active { opacity: 1; }
+
+/* Result Layout Grids */
+.result-layout { display: grid; grid-template-columns: 1fr; gap: 24px; }
+@media (min-width: 1024px) {
+    .result-layout { grid-template-columns: 2fr 3fr; align-items: start; }
+}
+
+/* Status Badges */
+.status-badge { display: inline-block; padding: 8px 20px; border-radius: 30px; font-size: 0.85rem; font-weight: 800; text-transform: uppercase; margin-bottom: 24px; letter-spacing: 1px; }
+.badge-predicted { background-color: rgba(130, 170, 255, 0.15); color: var(--text-active); border: 1px solid rgba(130, 170, 255, 0.4); }
+.badge-live { background-color: rgba(0, 200, 83, 0.15); color: #00c853; border: 1px solid rgba(0, 200, 83, 0.4); }
+
+/* Countdown */
+.countdown-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 24px; }
+.countdown-item { background-color: var(--bg-tertiary); border: 1px solid var(--border-color); border-radius: 8px; padding: 16px 8px; text-align: center; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1); }
+.countdown-val { color: var(--text-active); font-size: 1.5rem; font-weight: 800; font-family: var(--font-family-code); }
+.countdown-lbl { font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; margin-top: 8px; font-weight: 700; letter-spacing: 1px; }
+
+/* Regions Grid */
+.region-grid { display: grid; grid-template-columns: 1fr; gap: 0 16px; }
+@media (min-width: 600px) {
+    .region-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* Animations */
+.region-row { opacity: 0; transform: translateY(8px); }
+.region-row.show { animation: fadeInUp 0.3s forwards; }
+
+@keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+.shake { animation: shake 0.4s cubic-bezier(.36,.07,.19,.97) both; }
+@keyframes shake {
+  10%, 90% { transform: translate3d(-1px, 0, 0); }
+  20%, 80% { transform: translate3d(2px, 0, 0); }
+  30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+  40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+
+/* --- Responsive & Overlay --- */
+.overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); backdrop-filter: blur(2px); opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0.3s; z-index: 1000; }
+body.left-sidebar-open .overlay { opacity: 1; visibility: visible; }
+@media (min-width: 1024px) {
+    #left-sidebar { position: static; transform: none; }
+    .icon-button#menu-toggle { display: none; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="app-container">
+    
+    <!-- Sidebar Layout -->
+    <aside id="left-sidebar">
+        <div class="sidebar-content">
+            <div class="sidebar-header">FFUPC</div>
+            <nav class="sidebar-nav">
+                <a href="#" data-target="home" class="nav-link active">
+                    <span class="material-symbols-outlined">track_changes</span>
+                    Patch Tracker
+                </a>
+                <a href="#" data-target="history" class="nav-link">
+                    <span class="material-symbols-outlined">history</span>
+                    Previous Updates
+                </a>
+                <a href="#" data-target="about" class="nav-link">
+                    <span class="material-symbols-outlined">info</span>
+                    About
+                </a>
+            </nav>
+        </div>
+        
+        <!-- Social Footer mapped to sidebar -->
+        <div class="sidebar-footer" style="padding: 16px; text-align: center;">
+            <div style="display: flex; justify-content: center; gap: 16px; margin-bottom: 12px;">
+                <a href="https://www.instagram.com/tizon.gaming" target="_blank" class="icon-button" style="padding: 6px;">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" style="width: 20px; filter: invert(1); opacity: 0.7;">
+                </a>
+                <a href="https://www.facebook.com/TizonGaming0" target="_blank" class="icon-button" style="padding: 6px;">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/facebook.svg" style="width: 20px; filter: invert(1); opacity: 0.7;">
+                </a>
+                <a href="https://youtube.com/@tizongaming" target="_blank" class="icon-button" style="padding: 6px;">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/youtube.svg" style="width: 20px; filter: invert(1); opacity: 0.7;">
+                </a>
+            </div>
+            <div style="font-size: 0.8rem; font-weight: 800; color: var(--text-secondary); letter-spacing: 1px;">@TIZONGAMING</div>
+        </div>
+    </aside>
+
+    <div class="overlay" id="sidebar-overlay"></div>
+
+    <!-- Main Content Layout -->
+    <div class="main-wrapper">
+        
+        <!-- Header is explicitly perfectly centered -->
+        <header class="main-header">
+            <button class="icon-button" id="menu-toggle" style="position: absolute; left: 16px;">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            <div class="header-title" style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+                <img src="https://freefire-iconlibrary.vercel.app/api/get-image?type=icon&value=UI_Icon_maintain" style="width: 24px; height: 24px; filter: grayscale(1) brightness(2);" alt="FFUPC Maintenance Icon">
+                FFUPC
+            </div>
+        </header>
+
+        <div class="content-area">
+            
+            <!-- SCREEN 1: Home / Tracker -->
+            <div id="home-screen" class="screen active">
+                <div class="content-wrapper">
+
+                    <div class="page-header">
+                        <h1>Patch Tracker</h1>
+                        <p>Version Deployment Predictor</p>
+                        <!-- Dynamic Live Badge -->
+                        <div class="current-ob-badge">
+                            <span class="material-symbols-outlined" style="font-size: 18px;">verified</span>
+                            Current Live: <strong id="currentObDisplay">Loading...</strong>
+                        </div>
+                    </div>
+
+                    <!-- Input Form -->
+                    <section style="max-width: 360px; margin: 0 auto;">
+                        <div id="inputBox" class="profile-card" style="text-align: center; transition: 0.3s border-color;">
+                            <div style="display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 24px;">
+                                <span style="font-size: 1.5rem; font-weight: 800; color: var(--text-secondary); user-select: none;">OB</span>
+                                <input type="number" id="obInput" placeholder="00" class="patch-input" inputmode="numeric" aria-label="Enter OB Patch Number">
+                            </div>
+                            <button onclick="processQuery()" class="btn btn-primary" style="width: 100%; font-size: 1rem; padding: 14px; text-transform: uppercase; letter-spacing: 1px;">
+                                Track Patch
+                            </button>
+                            <p id="errorHint" style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 16px; text-transform: uppercase; font-weight: 700; letter-spacing: 1px;">Ready to check</p>
+                        </div>
+                    </section>
+
+                    <!-- Loader -->
+                    <div id="loaderOverlay" style="display: none; margin: 3rem 0; text-align: center;">
+                        <div class="kelly-container" id="kellyTarget"></div>
+                        <p style="font-size: 0.85rem; font-weight: 800; color: var(--text-active); margin-top: 16px; letter-spacing: 2px; text-transform: uppercase;">
+                            Please wait, loading...
+                        </p>
+                    </div>
+
+                    <!-- Result Layer -->
+                    <div id="resultLayer" style="display: none; margin-top: 24px;">
+                        <div class="result-layout">
+                            
+                            <!-- Date & Countdown -->
+                            <div class="result-left">
+                                <div class="profile-card text-center" style="display: flex; flex-direction: column; align-items: center; border-bottom-width: 4px; border-bottom-color: var(--text-active);">
+                                    <div id="statusTag" class="status-badge badge-predicted"></div>
+                                    <p id="dayName" style="color: var(--text-secondary); font-weight: 800; text-transform: uppercase; font-size: 0.85rem; margin-bottom: 8px; letter-spacing: 2px;"></p>
+                                    <h2 id="fullDate" style="font-size: 2.2rem; font-weight: 900; margin-bottom: 0;"></h2>
+                                </div>
+
+                                <div id="countdownBox" class="countdown-grid" style="display: none;">
+                                    <div class="countdown-item">
+                                        <span class="countdown-val" id="day_v">00</span>
+                                        <p class="countdown-lbl">Days</p>
+                                    </div>
+                                    <div class="countdown-item">
+                                        <span class="countdown-val" id="hour_v">00</span>
+                                        <p class="countdown-lbl">Hrs</p>
+                                    </div>
+                                    <div class="countdown-item">
+                                        <span class="countdown-val" id="min_v">00</span>
+                                        <p class="countdown-lbl">Min</p>
+                                    </div>
+                                    <div class="countdown-item">
+                                        <span class="countdown-val" id="sec_v">00</span>
+                                        <p class="countdown-lbl">Sec</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Regional Times -->
+                            <div class="result-right">
+                                <div id="regionContainer" class="profile-card" style="height: 100%;">
+                                    <div id="tableHeader" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--border-color);">
+                                        <h3 style="font-size: 0.85rem; font-weight: 800; text-transform: uppercase; color: var(--text-secondary); letter-spacing: 1px;">Region Names</h3>
+                                        <span style="font-size: 0.85rem; font-weight: 800; color: var(--text-active); text-transform: uppercase; letter-spacing: 1px;">Local Time</span>
+                                    </div>
+                                    
+                                    <div id="regionGrid" class="region-grid"></div>
+
+                                    <div id="liveMessage" style="display: none; text-align: center; padding: 40px 0;">
+                                        <img src="https://freefire-iconlibrary.vercel.app/api/get-image?type=icon&value=UI_Icon_maintain" style="width: 80px; height: 80px; margin: 0 auto 24px; display: block;" alt="Update Live">
+                                        <h3 id="liveMessageTitle" style="font-size: 1.8rem; font-weight: 900; margin-bottom: 8px;">Update Deployed</h3>
+                                        <p id="liveMessageDesc" style="color: var(--text-secondary); font-size: 1rem; font-weight: 600;">Update is currently active.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <!-- Disclaimer -->
+                        <div id="finalDisclaimer" style="display: none; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--border-color); text-align: center; color: var(--text-secondary);">
+                            <p style="max-width: 600px; margin: 0 auto; line-height: 1.6; text-transform: uppercase; font-size: 0.8rem; font-weight: 600; letter-spacing: 1px;">
+                                Note: Calculated patch dates are highly accurate but remain subject to change if officials decide to deploy early or late.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <!-- SCREEN 2: Previous Updates (History) -->
+            <div id="history-screen" class="screen">
+                <div class="content-wrapper">
+                    <div class="page-header">
+                        <h1>Previous Updates</h1>
+                        <p>History of all past Free Fire patch deployments</p>
+                    </div>
+
+                    <!-- Dynamic List Populated by JS -->
+                    <div id="historyListContainer" style="max-width: 600px; margin: 0 auto;">
+                        <!-- JS WILL INJECT DATA HERE -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- SCREEN 3: About -->
+            <div id="about-screen" class="screen">
+                <div class="content-wrapper">
+                    <div class="page-header">
+                        <h1>About</h1>
+                        <p>System Information</p>
+                    </div>
+
+                    <div style="max-width: 600px; margin: 0 auto;">
+                        <div class="profile-card text-center">
+                            <img src="/favicon.png" style="height: 50px; margin: 0 auto 24px;" alt="FFUPC Logo">
+                            
+                            <h3 style="font-size: 1.35rem; font-weight: 900; margin-bottom: 8px;">FFUPC | HaldarAi</h3>
+                            <p style="color: var(--text-secondary); font-weight: 500; line-height: 1.6; margin-bottom: 24px;">
+                                This tool uses an advanced mathematical algorithm synchronized with Garena's historical update cycle patterns to accurately calculate and track future OB version deployment dates and regional times.
+                            </p>
+
+                            <div style="padding-top: 24px; border-top: 1px solid var(--border-color);">
+                                <h4 style="font-size: 0.9rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: var(--text-secondary); margin-bottom: 12px;">Developed By</h4>
+                                <p style="font-size: 1.3rem; font-weight: 900; color: var(--text-active);">TizonGaming</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+// ==========================================
+// 🚀 INLINE PWA SERVICE WORKER (For Installability)
+// ==========================================
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        const swCode = `
+            const CACHE_NAME = 'ffupc-cache-v1';
+            self.addEventListener('install', (e) => {
+                e.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(['/'])));
+            });
+            self.addEventListener('fetch', (e) => {
+                e.respondWith(caches.match(e.request).then((response) => response || fetch(e.request)));
+            });
+        `;
+        const blob = new Blob([swCode], { type: 'application/javascript' });
+        const swUrl = URL.createObjectURL(blob);
+        navigator.serviceWorker.register(swUrl).catch(err => console.log('PWA Error:', err));
+    });
+}
+
+// --- NAVIGATION TABS LOGIC ---
+const navLinks = document.querySelectorAll('.nav-link');
+const screens = document.querySelectorAll('.screen');
+const body = document.body;
+const sidebarOverlay = document.getElementById('sidebar-overlay');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        // Remove active from all links and screens
+        navLinks.forEach(l => l.classList.remove('active'));
+        screens.forEach(s => s.classList.remove('active'));
+        
+        // Add active to clicked link
+        link.classList.add('active');
+        
+        // Show target screen
+        const targetId = link.getAttribute('data-target');
+        document.getElementById(targetId + '-screen').classList.add('active');
+        
+        // Close sidebar on mobile after clicking
+        body.classList.remove('left-sidebar-open');
+    });
+});
+
+// Sidebar Toggle Functionality
+const menuToggle = document.getElementById('menu-toggle');
+menuToggle.addEventListener('click', () => {
+    body.classList.add('left-sidebar-open');
+});
+sidebarOverlay.addEventListener('click', () => {
+    body.classList.remove('left-sidebar-open');
+});
+
+// --- TRACKER DATA ---
+const regionDB = [
+  { n:"India", t:"09:30 AM", c:"in" },
+  { n:"Bangladesh", t:"10:00 AM", c:"bd" },
+  { n:"Brazil", t:"01:00 AM", c:"br" },
+  { n:"Thailand", t:"10:00 AM", c:"th" },
+  { n:"Saudi Arabia", t:"07:00 AM", c:"sa" },
+  { n:"Pakistan", t:"09:00 AM", c:"pk" },
+  { n:"Nepal", t:"09:45 AM", c:"np" },
+  { n:"Vietnam", t:"11:00 AM", c:"vn" },
+  { n:"Singapore", t:"12:00 PM", c:"sg" },
+  { n:"Indonesia", t:"11:00 AM", c:"id" },
+  { n:"Morocco", t:"05:00 AM", c:"ma" },
+  { n:"Russia", t:"07:00 AM", c:"ru" },
+  { n:"Mexico", t:"10:00 AM", c:"mx" },
+  { n:"Italy", t:"06:00 AM", c:"it" },
+  { n:"Argentina", t:"01:00 AM", c:"ar" },
+  { n:"Turkey", t:"07:00 AM", c:"tr" },
+  { n:"Algeria", t:"05:00 AM", c:"dz" },
+  { n:"Iran", t:"07:30 AM", c:"ir" },
+  { n:"Kazakhstan", t:"10:00 AM", c:"kz" },
+  { n:"Egypt", t:"06:00 AM", c:"eg" },
+  { n:"Uzbekistan", t:"09:00 AM", c:"uz" },
+  { n:"Colombia", t:"11:00 PM", c:"co" }
+];
+
+// Loader Setup
+const kellyTarget = document.getElementById("kellyTarget");
+for (let i = 1; i <= 10; i++) {
+  const frame = document.createElement("div");
+  frame.className = `kelly-frame frame-${i}`;
+  frame.style.backgroundImage =
+    `url(https://freefire-iconlibrary.vercel.app/api/get-image?type=icon&value=UI_loading_kelly_${String(i).padStart(2,"0")})`;
+  kellyTarget.appendChild(frame);
+}
+
+let frameIdx = 1;
+setInterval(() => {
+  document.querySelectorAll(".kelly-frame").forEach(f => f.classList.remove("active"));
+  document.querySelector(`.frame-${frameIdx}`)?.classList.add("active");
+  frameIdx = (frameIdx % 10) + 1;
+}, 85);
+
+let activeTimer;
+
+// Tracker Elements
+const obInput = document.getElementById("obInput");
+const errorHint = document.getElementById("errorHint");
+const inputBox = document.getElementById("inputBox");
+const resultLayer = document.getElementById("resultLayer");
+const finalDisclaimer = document.getElementById("finalDisclaimer");
+const loaderOverlay = document.getElementById("loaderOverlay");
+const statusTag = document.getElementById("statusTag");
+const regionGrid = document.getElementById("regionGrid");
+const tableHeader = document.getElementById("tableHeader");
+const liveMessage = document.getElementById("liveMessage");
+const liveMessageTitle = document.getElementById("liveMessageTitle");
+const liveMessageDesc = document.getElementById("liveMessageDesc");
+const countdownBox = document.getElementById("countdownBox");
+const dayName = document.getElementById("dayName");
+const fullDate = document.getElementById("fullDate");
+const currentObDisplay = document.getElementById("currentObDisplay");
+const historyListContainer = document.getElementById("historyListContainer");
+
+// Generates correct date for ANY targeted OB version
+function getPatchDate(obNum) {
+    const knownDates = {
+        38: "January 11, 2023",
+        39: "March 22, 2023",
+        40: "May 31, 2023",
+        41: "August 10, 2023",
+        42: "October 31, 2023",
+        43: "January 24, 2024",
+        44: "April 17, 2024",
+        45: "June 26, 2024",
+        46: "September 4, 2024",
+        47: "January 8, 2025",
+        48: "March 22, 2025",
+        49: "June 4, 2025",
+        50: "August 15, 2025",
+        51: "October 31, 2025",
+        52: "January 14, 2026",
+        53: "April 8, 2026",
+        54: "June 24, 2026"
+    };
+
+    let target;
+    
+    if (knownDates[obNum]) {
+        target = new Date(knownDates[obNum]);
+    } else if (obNum < 38) {
+        // Mathematical fallback for very old patches
+        const anchor = new Date("January 11, 2023"); 
+        target = new Date(anchor);
+        target.setDate(anchor.getDate() - (38 - obNum) * 60);
+    } else {
+        // Mathematical prediction for future patches (approx 77-day cycle)
+        const anchor = new Date("June 24, 2026");
+        target = new Date(anchor);
+        target.setDate(anchor.getDate() + (obNum - 54) * 77);
+        
+        while (target.getDay() !== 3) target.setDate(target.getDate() + 1);
+    }
+
+    target.setHours(8, 0, 0, 0);
+    return target;
+}
+
+// Automatically figure out what the current Live OB version is
+function calculateCurrentOBNumber() {
+    let now = Date.now();
+    let ob = 1;
+    
+    while (getPatchDate(ob).getTime() <= now) {
+        ob++;
+    }
+    return ob - 1; 
+}
+
+// Generate the Historical Previous Updates List
+function populateHistory() {
+    let currentOB = calculateCurrentOBNumber();
+    let htmlContent = "";
+
+    for (let i = currentOB; i >= 1; i--) {
+        let dateObj = getPatchDate(i);
+        let dateString = dateObj.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+        let isLive = (i === currentOB);
+
+        htmlContent += `
+            <div class="history-item ${isLive ? 'current-live' : ''}">
+                <span class="history-item-ob">OB${i.toString().padStart(2, '0')} Update</span>
+                <span class="history-item-date">${dateString}</span>
+            </div>
+        `;
+    }
+    
+    historyListContainer.innerHTML = htmlContent;
+}
+
+let activeCurrentObNum = calculateCurrentOBNumber();
+currentObDisplay.innerText = "OB" + activeCurrentObNum;
+populateHistory();
+
+function processQuery() {
+  const ob = parseInt(obInput.value);
+
+  if (!ob || ob <= activeCurrentObNum) {
+    errorHint.innerText = `Error: Please enter an upcoming patch (>${activeCurrentObNum})`;
+    errorHint.style.color = "var(--error-color)";
+    inputBox.classList.add("shake", "error-state");
+    setTimeout(() => inputBox.classList.remove("shake"), 400);
+    return;
+  }
+
+  errorHint.innerText = "Processing Data...";
+  errorHint.style.color = "var(--text-secondary)";
+  inputBox.classList.remove("error-state");
+
+  resultLayer.style.display = "none";
+  finalDisclaimer.style.display = "none";
+  loaderOverlay.style.display = "block";
+
+  setTimeout(() => {
+    loaderOverlay.style.display = "none";
+    showResults(ob);
+  }, 1400);
+}
+
+function showResults(obNum) {
+  clearInterval(activeTimer);
+
+  let target = getPatchDate(obNum);
+  let now = new Date();
+
+  if (now.getTime() >= target.getTime()) {
+    statusTag.className = "status-badge badge-live";
+    statusTag.innerText = "ALREADY DEPLOYED";
+
+    regionGrid.style.display = "none";
+    tableHeader.style.display = "none";
+    liveMessage.style.display = "block";
+    countdownBox.style.display = "none";
+    
+    liveMessageTitle.innerText = "Update Deployed";
+    liveMessageDesc.innerText = `OB${obNum} update is already active or has passed.`;
+  } else {
+    statusTag.className = "status-badge badge-predicted";
+    statusTag.innerText = "PREDICTED DATE";
+
+    regionGrid.style.display = "grid";
+    tableHeader.style.display = "flex";
+    liveMessage.style.display = "none";
+
+    regionGrid.innerHTML = regionDB.map((r, i) => `
+      <div class="history-item region-row" style="animation-delay:${i * 0.04}s">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <img src="https://flagcdn.com/w40/${r.c}.png" style="width: 20px; border-radius: 2px;" alt="${r.n} Flag">
+          <span style="font-size: 0.95rem; font-weight: 700; color: var(--text-primary);">${r.n}</span>
+        </div>
+        <span style="font-size: 0.85rem; font-weight: 600; font-family: var(--font-family-code); color: var(--text-secondary);">${r.t}</span>
+      </div>
+    `).join("");
+
+    setTimeout(() => {
+      document.querySelectorAll(".region-row").forEach(r => r.classList.add("show"));
+    }, 50);
+
+    runCountdown(target);
+  }
+
+  dayName.innerText = target.toLocaleDateString("en-US", { weekday: "long" });
+  fullDate.innerText = target.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+
+  resultLayer.style.display = "block";
+  finalDisclaimer.style.display = "block";
+}
+
+function runCountdown(target) {
+  countdownBox.style.display = "grid";
+  
+  const end = target.getTime();
+
+  function tick() {
+    const diff = end - Date.now();
+    
+    if (diff < 0) {
+        clearInterval(activeTimer);
+        showResults(parseInt(obInput.value)); 
+        
+        activeCurrentObNum = calculateCurrentOBNumber();
+        currentObDisplay.innerText = "OB" + activeCurrentObNum;
+        populateHistory();
+        return;
+    }
+
+    document.getElementById("day_v").innerText = Math.floor(diff / 864e5).toString().padStart(2, "0");
+    document.getElementById("hour_v").innerText = Math.floor((diff % 864e5) / 36e5).toString().padStart(2, "0");
+    document.getElementById("min_v").innerText = Math.floor((diff % 36e5) / 6e4).toString().padStart(2, "0");
+    document.getElementById("sec_v").innerText = Math.floor((diff % 6e4) / 1e3).toString().padStart(2, "0");
+  }
+
+  tick();
+  activeTimer = setInterval(tick, 1000);
+}
+</script>
+</body>
+</html>
